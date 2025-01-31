@@ -1,0 +1,10 @@
+^D:\PROGRAMMING\LANGUAGES\C++\COMP3520\A1\CMAKELISTS.TXT
+setlocal
+C:\Users\Edward\scoop\apps\cmake\3.29.2\bin\cmake.exe -SD:/Programming/Languages/C++/comp3520/a1 -BD:/Programming/Languages/C++/comp3520/a1/build --check-stamp-file D:/Programming/Languages/C++/comp3520/a1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
